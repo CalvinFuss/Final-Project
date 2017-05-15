@@ -6,16 +6,17 @@ using UnityEngine.SceneManagement;
 public class StateHandlerMain : MonoBehaviour {
     PlayerController playerController;
     public GameObject player;
-    // Use this for initialization
+
     void Start () {
-        playerController = player.GetComponent<PlayerController>();
+        playerController = player.GetComponent<PlayerController>(); // script
     }
 	
-	// Update is called once per frame
+
 	void Update () {
-        if (playerController.tempPlayerHealth.fillAmount <= 0)
+        // If the player's health bar reaches a value of 0 
+        if (playerController.tempPlayerHealth.fillAmount <= 0) 
         {
-            SceneManager.LoadScene("End");
+            SceneManager.LoadScene("End"); // Load scene
         }
     }
 }

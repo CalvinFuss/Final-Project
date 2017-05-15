@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// This is a derived class for the 'Zebra' agent
 public class Zebra : Boid {
 
-    //public GameObject zebraAnimal;
+
     public float speedZebra;
     public GameObject animalZebra;
     public GameObject startGameObject;
@@ -28,7 +28,7 @@ public class Zebra : Boid {
 
     float distanceVisible;
   
-    // Use this for initialization
+    
     void Awake()
     {
         alertLevelRate = 10f;

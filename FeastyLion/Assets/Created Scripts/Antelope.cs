@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// This is a derived class for the 'Antelope' agent
 public class Antelope : Boid {
 
-    //public GameObject zebraAnimal;
+    
     public float speedZebra;
     public GameObject animalZebra;
     public GameObject startGameObject;
@@ -27,7 +27,7 @@ public class Antelope : Boid {
 
     float distanceVisible;
 
-    // Use this for initialization
+  
     void Awake()
     {
         alertLevelRate = 10f;
@@ -44,26 +44,14 @@ public class Antelope : Boid {
     {
         walkAnimationMultiplier = 2;
         runAnimationMultiplier = 3;
-
-
     }
 
 
-
-    // Update is called once per frame
     void Update()
     {
-
         damage = Random.Range(10, 20);
-
-        boidMove(player, startGameObject, blood, bloodSplat, combatText, healthBar, damage, alertLevelRate, staminaLevelRate, panicLevelRate, distanceVisible, walkAnimationMultiplier, runAnimationMultiplier); // Move speed, Player game object, Object it moves to when switching to 'wander state', blood particle, blood png
-
-        // 
+        boidMove(player, startGameObject, blood, bloodSplat, combatText, healthBar, damage, alertLevelRate, staminaLevelRate, panicLevelRate, distanceVisible, walkAnimationMultiplier, runAnimationMultiplier); // Move speed, Player game object, Object it moves to when switching to 'wander state', blood particle, blood png 
     }
 
-    void getZebraAnimtions()
-    {
-
-    }
-
+ 
 }

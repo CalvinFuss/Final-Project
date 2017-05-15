@@ -1,21 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// Animates the water within the scene
 public class WaterMovement : MonoBehaviour {
     float height = 0;
     bool move = true;
     float yPos;
-	// Use this for initialization
+   
 	void Start () {
         yPos = transform.position.y;
-        height = yPos;
+        height = yPos; 
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-
-
+        // Moves water up and down on the Y coordinate 
         if (height >= yPos + 1f)
         {
             move = true;

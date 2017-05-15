@@ -81,7 +81,7 @@ public class AnimalVariables : MonoBehaviour
     // Flocking rule # 3 - Seperation - An alternative method to that within the base class
     // When agents collide, the direction of movement is calculated
     // This direction of movement is to transform agents in the oposite direction in which they are moving
-    /*
+    
     void OnCollisionEnter(Collision collision)
     {        
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ignore")) // Checks collisions between objects on the 'ignore' layer
@@ -90,7 +90,7 @@ public class AnimalVariables : MonoBehaviour
            addForceActive = true;            
         }               
     }
-    */
+    
 }
         
 

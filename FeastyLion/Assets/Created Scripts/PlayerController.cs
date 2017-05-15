@@ -54,7 +54,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    // Use this for initialization
     void Start()
     {
         animations = transform.GetComponent<Animator>();
@@ -74,15 +73,10 @@ public class PlayerController : MonoBehaviour
         foreach (GameObject enemy in instantiateEnemies)
         {
             enemies.Add(enemy); // Adds enemies to list
-        }
-
-      
+        } 
+            
         Stamina();
         
-        // cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-
-        
-
         foreach (GameObject enemy in enemies)
         {
             float distance = Vector3.Distance(enemy.transform.position, transform.position);
@@ -132,7 +126,7 @@ public class PlayerController : MonoBehaviour
         
         attackPosition();
 
-        // RectTransform rectTransform = arrow.GetComponent<RectTransform>();
+       
 
 
 

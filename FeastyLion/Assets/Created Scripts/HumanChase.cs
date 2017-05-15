@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ // Humanoid derived class
 public class HumanChase : Boid
 {
     public float speedZebra;
@@ -33,7 +33,7 @@ public class HumanChase : Boid
     Vector3 directionToTarget;
     float distanceToTarget;
 
-    // Use this for initialization
+  
     void Awake()
     {
         alertLevelRate = 10f;
@@ -57,7 +57,7 @@ public class HumanChase : Boid
 
 
 
-    // Update is called once per frame
+ 
     void Update()
     {
 
@@ -73,7 +73,8 @@ public class HumanChase : Boid
     public override void fleeForward(GameObject player, GameObject boids)
     {
         base.fleeForward(player, boids);
-        tempFleeDest = player.transform.position;
+        // Overrides base class function amd sets agent destination to that of the players position
+        tempFleeDest = player.transform.position; 
     }
     
     
@@ -82,7 +83,7 @@ public class HumanChase : Boid
     public override void animalStateParameters(float proximity, GameObject boids, GameObject player, float alertLevelRate, float staminaLevelRate, float panicLevelRate, float distanceVisible)
     {
         base.animalStateParameters(proximity, boids, player, alertLevelRate, staminaLevelRate, panicLevelRate, distanceVisible);
-
+        // Overrides base class function amd sets agent destination to that of the players position
         if (Vector3.Distance(boids.transform.position, player.transform.position) < 120 && animalVariables.state == AnimalVariables.State.Wander || animalVariables.state == AnimalVariables.State.Run) // If the player come within a distance of 80 units
         {
             destination = player.transform.position;

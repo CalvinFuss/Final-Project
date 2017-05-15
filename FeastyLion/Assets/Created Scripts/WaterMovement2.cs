@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// Animates the water within the scene in the opposing direction
 
 public class WaterMovement2 : MonoBehaviour {
     float height = 0;
     bool move = false;
     float yPos;
-    // Use this for initialization
+
     void Start()
     {
         yPos = transform.position.y;
         height = yPos;
     }
 
-    // Update is called once per frame
+    // Moves water up and down on the Y coordinate 
     void Update()
     {
 

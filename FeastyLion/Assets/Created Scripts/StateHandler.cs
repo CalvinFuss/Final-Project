@@ -2,28 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class StateHandler : MonoBehaviour {
-    
-	// Use this for initialization
-	void Start () {
-       
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
+// Handles scenes
+public class StateHandler : MonoBehaviour {
 
     public void StartGameBtn(string scene)
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(scene); // Loads Start Scene 
 
     }
 
     public void EndGameBtn(string scene)
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(scene); // Loads End Scene
     }
 
 

@@ -5,11 +5,11 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 
-
+// This is the Agent Base Class
 public class Boid : MonoBehaviour
 {
 
-
+    //Declaring Variables
     float timerIncrement = 1;
     float timerTarget = 1;
     float distanceWanted, numberOfAnimals, healthMain, startingHealth, damageMain, panicSpeed, wanderSpeed, speed, speedMain, alertLevelRateMain, score, playerHealth;
