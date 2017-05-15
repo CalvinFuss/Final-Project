@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeastyLion.Plugins", "FeastyLion.Plugins.csproj", "{19DFDA9C-4C08-43B2-97FF-1731E01B8C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeastyLion", "FeastyLion.csproj", "{7282CD37-3E23-4182-7D17-E9757B1021F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeastyLion.Editor.Plugins", "FeastyLion.Editor.Plugins.csproj", "{D503095D-61CF-6368-AEBA-0D928DEBA0D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19DFDA9C-4C08-43B2-97FF-1731E01B8C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DFDA9C-4C08-43B2-97FF-1731E01B8C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DFDA9C-4C08-43B2-97FF-1731E01B8C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DFDA9C-4C08-43B2-97FF-1731E01B8C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7282CD37-3E23-4182-7D17-E9757B1021F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7282CD37-3E23-4182-7D17-E9757B1021F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7282CD37-3E23-4182-7D17-E9757B1021F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7282CD37-3E23-4182-7D17-E9757B1021F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D503095D-61CF-6368-AEBA-0D928DEBA0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D503095D-61CF-6368-AEBA-0D928DEBA0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D503095D-61CF-6368-AEBA-0D928DEBA0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D503095D-61CF-6368-AEBA-0D928DEBA0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
